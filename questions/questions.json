@@ -1,0 +1,12 @@
+[{
+	"title": "Data Normalization",
+	"content": "Given as input a Numpy array, normalize the array and return the result. By normailze, make the mean 0 and standard deviation 1.",
+	"coding": true,
+	"solution":"",
+	"difficulty": "Easy",
+	"frequency": 3.0,
+	"category": ["Linear Algebra"],
+	"test_cases": {"print(solution(np.array([-1, 0, 1])))" : [-1, 0, 1], "print(solution(np.array([-2, 0, 2])))" : [-1, 0, 1]}
+}
+
+]

@@ -1,0 +1,401 @@
+Mastering the AI interview 
+
+
+This website includes hundreds of questions asked during an AI interview from numerous companies, including Google, Facebook, Sanpchat, and Netflix. 
+
+
+
+
+
+Linear Algebra
+---------------
+
+Probability/Statisitcs
+----------------------
+
+General Machine Learning
+-------------------------
+
+Deep Learning
+-------------
+
+
+
+1) In the eyes of a machine, images are represented as multi-dimensional matrices. For instance, images are commonly 3D matrices. Two of the dimensions represent the heigt and width of the image, and the third dimension is the number of channels, which is often 3 (RGB). As an example, an image can often be 1080 x 1080 x 3, meaning that the image has a height and width of 1080. (Sometimes, yuou may see the number of channels come first ie. 3 x 1080 x 1080). 
+
+One of the most common  operations done on images is resizing the image. We always resize images to fit their context. How can the matrix of an image be modified to account for resizing? Give specific examples. What matrix operations can we undergo to scale a 1080 x 1080 x 3 matrix in half? What if we only wanted to scale the height by half and keep the width the same?
+
+
+2) In machine learning, the term "one hot encoding" is often used. What does this mean?
+
+Followup -- What advantage does it bring?
+
+HINT: Often used in classification tasks
+
+
+
+3) Machine learning scientists often use a process called Principal Component Analysis, also known as PCA in order to enhance the quality of their model. When is this used? What does this mean?
+https://machinelearningmastery.com/calculate-principal-component-analysis-scratch-python/
+
+
+4) Question on SVD
+
+
+
+
+5) Campers at a national park have seen quite a few bears recently, and this has alarmed the National Park Service (NPS). To protect its campers, they want to install video cameras and send out an alert whenever a bear is spotted near campers. They want to create a machine learning model to detect bears in the footage captured by the cameras in order to set up an automatic alert system. Design a machine learning solution to this problem. Be sure to explain what kind of data you will need (and ensure that it is feasible to obtain), what model you will train, how you will train it, how you will evaluate it, how you will ensure that it is good enough to deploy, and how you will deploy it.
+
+
+
+6) A new grocery store opened in your neighborhood that you love to shop at. However, the prices of the items they sell are a mystery. When you shop there, you are only told the total price of your cart at the very end. You want to determine the price of every item. Let us assume that the store sells n items. You collect receipts from the last m customers that visited the store, which contains the the number of each item purchased and the total price of the cart. You want to train a model to estimate the price of each of the n items that the store sells. What type of model would you construct? What would your cost function be? 
+
+
+
+7) A new grocery store opened in your neighborhood that you love to shop at. However, the prices of the items they sell are a mystery. When you shop there, you are only told the total price of your cart at the very end. You want to determine the price of every item. Let us assume that the store sells n items.
+
+Unfortunately, very few customers offer their receipts, so you are left with a very limited amount of data. In fact, the amount of data you have is very limited that any model you train does not converge. How can we alter the model to deal with this issue? Will this work well?
+
+
+
+8) You are hired by a new social media company where users can follow other users. Users can be people, or organizations (think Instagram). Your task is to increase the number of interactions between users in order to increase retention and make the platform more appealing. You brainstorm some ways, and decide that the obvious way to do this would be to increase the number of users each user on the platform follows. This way, each user can see more content. To do this, you want to create a recommendation system where you recommend other users to follow for each user in the platform. Obviously, you want these recommendations to be accurate. How would you develop such a system? Make sure you explain how you would deal with new users.
+
+
+9) You are developing a new dating app. Your goal, obviously, is to maximize the number of matches made on the app. This can be done by increasing the number of right swipes for each user over a period of time. Since this number is equal to:
+
+probability a user (x) swipes right on a shown match (y) * number (n) of other users a user swipes on in the period of time = (p(x, y)) * n
+
+There are two ways to increase this number -- either increase the probability a user swipes right (shows interest) on each potential match shown, or increase the number of potential matches a user swipes on (ie either increase p(r) or increase n). You decide to focus on the former -- increasing the probability that each user swipes right on each potential match (p(r)).
+
+
+You can do this by showing potential matches who are appealing to each user. Apps like Tinder and Bumble already do this by taking location and age into account. You want to take this a few steps further. What other things can you take into account? Design how you would implement these factors.
+
+
+
+10) You are training model. As you are a polished machine learning engineer, you separate your data into training, dev and tests sets. HYou proceed with training the model using gradient descent. You visualize the training error over the iterations, and things seem to be going smoothly. The graph looks like this:
+
+
+You then decide to also visualize dev error. Its graph also looks promising (very similar to the training error graph). You are very happy with the progress of your model and share how you feel about the model at the weekly team meeting. A couple days later, your colleague approaches you, and says that she is super excited about your model, but wonders why the dev error is consistently lower than the training error (by a small, yet noticable and consisent number through the epochs). You explain that you did not notice this, but will take a look. How do you proceed? Is this a reason for concern? What could be causing this?
+
+
+
+11) You are hired by the ads team on Facebook. One way the company wants to target ads is by political preference. For instance, it wants to take a user's political preference into account when choosing what ads to display to the user. However, most users do not state their political preference on the platform (although some do). Thus, for most users, you must infer their political preference (whether they lean left, right, central, etc). 
+
+How would you go about developing such a model? (output linear or discrete, what data will you use, etc)
+
+How could political preference be a helpful attribute to take into account? Give specific examples.
+
+
+
+
+
+12) You are on the founding team of a social media company, very similar to Facebook. You finally have grown to the point where you want to monetize and run ads. You know that you make your money when a user clicks on the ad, therefore, you want to maximize the likelihood that a user clicks on the ads shown. You realize that you cannot just show each user ads randomly, but must intelligently show the ads in order to maximize the likelihood that a given user will click on the ad, a la ad targeting. Design a machine learning system where you can create a model that targets these ads. Be sure to describe how you would serve the model and how you would train the model. Focus on what data you will use, how you will collect this data, what your training data will be, and any privacy/security concerns your solution may raise. You may assume that the platform has some data about each user (think Facebook, ie gender, age, location, interests based on pages liked, friends, posts, comments, interactions, etc). 
+
+
+
+
+13) You are hired by Quora. They want to get rid of questions that do not contribute positively to the platform (ie inappropriate or hateful questions). Currently, they depend on a set of employees vetting each question before it gets posted. However, this process is inefficient and may discourage users from asking a question. They want to automate the process so it is done immediately, and they want you to take on this task. They do not have a set definition of what these questions consist of, but they give you the following examples:
+
+"Why are all Muslims terrorists?"
+"Why are gay people allowed to vote?"
+"fksdjfgoiew fjeisjf fjeijrien feededd"
+"Why are all white girls f*cking sl*ts?"
+"I like food"
+
+
+Their list is not exhaustive, and there are numerous other question types that should be removed. Design a system that determines whether a question is appropriate to be on the platform. 
+
+
+
+14) You are a co-founder of an e-commerce company, similar to Amazon but much smaller. To maximize profit, you want to recommend items for users to purchase. You decide to develop this recommendation engine. How would you design this recommendation engine? Since this is a small company, you have the authority to change what data you collect about each user, and how the platform works. How would you go about developing this recommendation system? 
+
+
+15) You are a co-founder of an e-commerce company, similar to Amazon but much smaller. To maximize profit, you want to recommend items for users to purchase. You decide to develop this recommendation engine. However, you know that entire families use the same account. Knowing this, how would you design this recommendation engine? Since this is a small company, you have the authority to change what data you collect about each user, and how the platform works.
+
+
+
+
+16) You are a co-founder of a streaming company, like Netflix. Unlike Netflix, this streaming service is made to accomdate only one person using each account (no profiles within each account). You want to decide whether it would be worth it to allow for multiple different profiles within an account (like Netlix). To help with your decision, you want to see how many people there are using each account. This information is impossible to obtain accurately, so you would like to estimate it without directly asking users. How would you go about developing a means to estimate the number of users each account has? Keep in mind, as co-founder, you have access to all the information you choose to collect on the site. In the end, how would you decide whether to create profiles within each account? Describe the pros and cons, both from a UX standpoint as well as from the business's standpoint.
+
+
+
+
+17) You are a marketer on ebay, selling used laptops. One of the most annoying things on ebay is the presence of scammers, who message you making an offer, and then "pretend" to pay you, baiting you into shipping the laptop. Since you have been in the business for a while, you have gotten very good at this, and pretty much never give into the bait. Hoever, it often wastes a lot of your time because, at first, you can not tell who is a scammer and who is actually interested, so you have to carry the conversation with everyone that messages you. This has really impacted your business as it is a huge time drain. You decide that you need to automate the process. How would you go about doing so?
+
+
+
+
+
+18) You are hired by Amazon. Recently, they have seen a huge uptick in fraudulant pruchases. They want you to work on detecting fradulant purchases. How would you develop such a fraud detection algorithm, assuming you have access you all the data Amazon has? If you need additional data, what is it and how owuld you use it?
+
+
+19) For a school project, you want to develop an algorithm that determines whether a word is pronouncable or not. This definition is subjective, but allows for some leeway. For example, "zhjkhgal" is not pronouncable, whereas "ghajekel" is.
+
+
+20) You are a co-founder of an ed-tech startup, where you are in charge of ordering the reading material by difficulty. Each reading material is between 1-15 pages each (short story length). How would you go about determining this ordering?
+
+
+
+
+21) Your old middle school principal finds you on LinkedIn and needs your help -- she wants to develop a platform to determine a student's reading level to determine what English class the student should be placed in. She says that she wants this platform to be like a test in the form of a computer application that gives each student a set time to complete tasks. At the end, the platform should recommend the level the student is. Explain how you would design such a platform. How would you gather your data and labels and evaluate your algorithm? How owuld you determine the different levels? How owuld you incorporate confidence levels?
+
+
+22) You are hired by the marketing team at Apple. The company is interested to evaluate their current public perception. They do not want to send out any surveys or anything of that sort. Instead, they want to use the internet (ie social media, news articles, etc.) to evaluate how they are perceived. How would you go about doing so?
+
+
+
+22) Working as an Apple engineer, you develop an algorithm to automatically scrape the web and determine the public perception of the company. The model is performing well, but you wish to improve it. One thing you notice is that your model often confuses "apple" the food with "Apple" the company. For instance, your model finds these sentences on the web: 'I love this apple!' 'This apple is bad.' 'The store down the street sells delicious apples.' It mistakenly uses them in determing the public perception. You want to limit this error, so you decide to train a model to predict whether "apple" in a sentence refers to the food or the company. How would you go about doing so? Design such a method that does so.
+
+
+
+
+23) You are hired by a biotech company that uses computer vision to read and diganose diseases in radiology images (computer-aided diagnostics). You are given the task of detecting lung masses from chest x-rays (CXRs). Given a CXR, output a binary value of whether the image contains a lung mass. The company hopes to display this product at hositals around the world. The company has partnered with hospitals in India, China, and the United States to gather data. At your disposal, you have 300,000 data points from these countries (100k from each country). Each data point consists of an image (a CXR) as well as its corresponding radiology report. The radiology report is a narrative text left by the radiologist who examined the image describing the x-ray. The datapoints do not have labels, just a radiology report, which is informative. It generally lists abnormalities the radiologist found in the image (including but not limited to lung masses). Keep in mind that the format of these radiology reports generally differs from hospital to hopital and country to country (they are all in Englih though). Furthermore, you know that the radiology report often has errors (radiologists occasionally mis-interpret the scans). The company hires a radiologist to label images, but the radiologist charges a fixed price per image labeled, and is very expensive. The comapny tells you to limit costs as it is still a smaller startup that does not have any revenue. Design a machine learning solution to this problem. Make sure to discuss the following: data (how will you divide data into train/test/dev?) labels (how will you obtain labels for each of the above sets). models (what models will you try) evaluation (how will you evaluate performance) serving (how will you serve this model).
+
+
+23) You are developing the computer vision chest x-ray model from the previous question. In the end, you believe you havea great model, and you report promising results. As your company pitches the product to the hospital that wants to use it, the hospital casts its doubts. It states that maybe the model does that well on the easy examples, not the harder exampels. The hosptial is unconvinced by the results you report on the test set because it believes that your test set may be skewed by these so-called 'easier' examples. How do you go about convinving the hospital that your model performs well on 'harder' examples as well?
+
+
+23) You are developing the computer vision chest x-ray model from the previous 2 questions. After some investigation, you and your teammates realize the hospital is right -- your model does achieve a good performance on the test set, but this does not mean much because the test set was dominated by easy examples. When the model is tested on harder examples, the performance drops dramaitcally. You want to improve the model. Describe a few methods you would do so.
+
+
+
+
+24) You are working on your Chest X-Ray (CXR) lung mass detection problem from the previous problem. After you started work and dug into your dataset, you realize that all the images from the hospitals in India were taken with older equipment, and the images are slightly different from the China and the United States datasets. You do some research and learn that these equipment and images are more common in developing countries. Design a machine learning solution to this problem. Make sure to discuss the following: data (how will you divide data into train/test/dev?) labels (how will you obtain labels for each of the above sets). models (what models will you try) evaluation (how will you evaluate performance) serving (how will you serve this model)
+
+
+
+
+
+25) You are working for a live streaming startup. While watching the live streams, users can leave live messages to chat with each other and discuss the stream. However, there is a lot of inappropriate content that gets said there, and you are worried that this is scaring some users away. You want to filter away these messages to keep your site safe and welcoming in order to grow your userbase. However, your site runs hundreds of streams at a time, and you already have a lot of users. Manually filtering these messages takes a lot of man-power and is inefficient because the messages are not filtered immediately. You want to develop an automatic filtering system that immediately decides to filter the messages in live time. To start, you collect thousands of real messages from your stream and manually label them. However, after the tedious labelling process, you notice that your dataset is very badly imbalanced. 99.2% of your examples are negative examples (meaning that they are appropriate), and only 0.8% of your examples are positive. How do you proceed?
+
+
+
+
+26) Dropout, introduced and patented by Google in 2012, is a common regularizer machine learning engineers use to prevent overfitting in neural networks. It has become so popular that many machine learning engineers use dropout by default. In fact, many machine learning frameworks are configured to include dropout by default as well. Describe the logic behind dropout. Be sure to be specific and use concrete math to help demonstrate your point. Explain how a probability (p) is chosen and used and how it affects the overall neural network. Furthermore, explains how dropout affects test-time model execution.
+
+
+
+
+
+27) L1 regularization and L2 regularization are two very common techniques used for regularizing in machine learning. All common machine learning frameworks have support for these types of regularization. How do these regularizers work? Be sure to be specific and use concrete math to help illustrate your point. What are the differences between L1 and L2 regularization?
+
+
+
+
+
+28) In deep learning, overfitting is a common occurrence machine learning engineers face. However, there have been numerous developments made to address this issue. List a few, and describe the reasoning behind why they work. You are encouraged to use mathematical equations.
+
+
+
+29) You are developing a neural network to predict the next recession. You have obtained all of your data, split your data into proper sets, and are ready to start training. You decide on an architecture for your model, but are unsure what learning rate to choose. How do you choose a learning rate? What will happen if you choose a learning rate that is too high? Too low?
+
+
+
+30) In deep learning, people often use the term "saddle point" when training a model. What is a saddle point? What causes a saddle point? How does stochastic gradient descent affect how the model deals with saddle points?
+
+
+
+
+
+
+32) In neural networks, we often use what we call an "activation function", or a "non-linearity". What is the purpose of this? What are some examples?
+
+
+
+33) 
+
+
+
+
+34) You are developing an animal classifier. You want a model to be able to classify an animal as either a giraffe, zebra, bear, lion, elephant, jaguar, or wolf. You collect thousands of images from each of those classes, and train a model, and are very happy with your results. You are excited, so you show all of your friends. They are impressed by your model. However, your friends start to feed images of animals that are not in your training set (not in one of your output classes), and you start to worry. How would you expect your model to behave when an image of an animal not in your training set is fed in (ie a monkey or a dog)?
+
+
+
+35) You are still working on your animal classifier to classify an animal as either a giraffe, zebra, bear, lion, elephant, jaguar, or wolf. You are disappointed by the way the model performed on images of animals besides those. You decide to train a binary model to detect if an image is of one of those seven animals. However, you spent so much time collecting your initial dataset (which consists of images of animals from just those seven classes) that you do not want to go out and collect anymore. How would you train such a binary model using only your current dataset?
+
+
+
+
+36) You are working for a law firm. The law firm offers a free first consultation visit, as many do, but is getting very tired answering meaningless questions. The firm gets hundreds of phone calls a day asking whether a case would be successful, or whether the firm would be willing to take on their case. It has come to a point where the law firm is only taking on 2-3% of cases because the vast majority of people who call do not presnt a worthy case. This has proved to be a bottleneck for the law firm, as the lawyers spend most of their time answering pointless phone calls. They decide to autoamte the process, and hire you.
+
+
+The law firm has access to a very large booklet contianing thousands of legal and information documents about rights and previous cases. They want you to use this information to build a chatbot that answers questions and filters out cases, only referring the good cases to lawyers, thus saving hours of time. How would you go about developing such a system?
+
+
+
+
+
+37) In mathemitcal theory of neural networks, the Universal Approximaion Theorem states that neural networks with a single hidden layer (with a finite number of neurons) can approximate any continuous function, under mild assumptions on the activation function. Ian Goodfellow even stated, "A feedforward network ith a single layer is sufficient to represent any function".
+
+The above statement has crucial consequences. For one, the statement implies the neural networks with a single hidden layer can solve any problem and model any function. However, in deep learning, engineers often use neural networks with tens, even hundreds, of hidden layers. Explain why that is.
+
+
+
+
+38) You are building a classifier that predicts car type from a given image. You decide on 6 classes. You train the classifier using cross entropy loss. The model performs decently, but as you continue tuning hyperparameters and experimenting with different model architectures, you make an observation -- there are cases where the classifier has a smaller loss when it predicts the wrong car type than when it predicts the right car type (for a single example). You begin to wonder if your implementation is correct. Is this due to a bug in your code? If so, explan what the bug is. If not, explain what is going on here.
+
+
+
+
+39) You read an article about how someone became a millionare from sports betting, and you want to hop on the hype. You decide to train a classifier to predict who will win a certain NBA game. The model takes in data about each team, and outputs who will win (a binary output). You get very good results, and are very excited to start making money! Once you have your final model, how will you use it to bet?
+
+
+
+
+
+40) You are working for a biotech company, and they want you to build a classifier to predict what a cell type from a microscopic image. They give you a set of 8 cell types, and corresponding data. You train your model with cross-entropy loss, and are making good progress. As you experiment with different model architectures and hyperparameters, you notice that sometimes, models with a lower loss results in a lower accuacy, and are confused. You begin to wonder what is wrong. Is there a bug in the code causing this? Is this a dataset issue? What is going on?
+
+Will you still be having this issue if you lower the number of classes you have to 4? To 2?
+
+
+
+
+41) You are developing a classifier to predict the animal type from an image. You are frustrated with cross-entropy loss because a lower loss sometimes results in a worse accuracy, so you feel that your model is not optimizing the right thing. You decide to switch things up a bit. Instead of cross-entropy, you decide to use accuracy as the objective. Is this a good idea? Explain.
+
+
+
+
+42) You are developing a classifier to predict the animal type from an image. You are using softmax loss as your objective. Your classifier is surprisingly amazing (or your dataset is just very easy) and you are able to achieve 100% accuracy. You are extremely proud, and immediately save the model and the weights. Is it possible to achieve the same perfect accuracy with a different set of weights? How many such sets of weights are there? Is there a general rule of thumb that can give you a new set of weights that achieve a perfect accuracy given a set of weights that achieve perfect accuracy? Explain why.
+
+
+
+
+43) You are developing a classifier to predict the sport a college athlete trains. You develop a stunning classifier with 100% accuracy and amaze everyone. You are using softmax loss. Your self-proclaimed machine learning expert friend comes to you and tells you that, although impressive, your model's loss can be even smaller if you double or triple the weights. You are hesitant to believe this because you are already achieving 100% accuracy. Is what your friend telling you true? Why or why not? If so, then why does your model not learn to just pick a very, very, very large  multiple of the weights (because it is trying to minimize loss)?
+
+
+
+
+44) You want to develop a classifier to predict the sport a college athlete trains, given a full body picture of the student. How would you design such a solution? Explan how you would obtain your dataset, how you would divide the dataset into sets, what architectures you would try (including loss function), and how you would evaluate your model.
+
+
+
+
+45) What are the differences between softmax loss and cross-entropy loss?
+
+
+
+46) In L2 regularization, a term is added to the loss. This term is often 1/2 * λ * w^2. What does the term λ represent here? Why is it common to have the 1/2 term? How does this act as a regularizer?
+
+
+
+47) L2 regularization is often referred to as linear weight decay. Why is this? Please derive your answer using math.
+
+
+
+48) Some machine learning engineers use what is known as a max norm constraint. Essentially, this enforces an absolute upper bound on the magnitude of the weight vector for every neuron. This means that, at every iteration, parameter updates happen as normal, except every neuron of the resulting weight vector is clamped such that its vale is less than or equal to the chosen upper bound. Why might this be a helpful modification when training a neural network?
+
+
+
+49) You are training a neural network to classify animals in an image. You find that your network is overfitting a good amount so you decide to add regularization. You first begin by adding dropout, which helps a bit, bt you are still overfitting. You proceed by adding L2 regularization. However, your self-proclaimed machine learnng expert friend who is looking over your shoulder, tells you that you should never mix different regularization methods. Is he correct? Why or why not?
+
+
+
+
+50) Dropout is a regularization method used in neral networks. It randomly deactivates neurons in a neural netowrk in every forward pass with a certain probability. For instance, during training, every neuron in the network has a probability p that it will be kept, and a probability 1-p that it will be deactivated. Explain why this acts as a regularizer. What happens at test time?
+
+
+
+51) In dropout, random neurons in a neural network are deactivated in order to regularize the network. Dropout is very common in regular neural networks. Can they be used in convolutional neural networks? If not, explain why. If so, explain how it would work and the intuition behind it.
+
+
+
+52) You are working on an animal classifier network. You are facing extreme overfitting. You add dropout and L1 regulrization. You even decomplicate the neural network. However, it does not seem to be working, so you ask your self-proclaied machine learning expert co-worker for advice. She looks through your code and says, "you are adding a good amount of regularization, but you do not regularize the bias terms. That could potentially help you". 
+
+Is your friend right? Are bias parameters normally regularized. If so, what is the effect of doing so? If not, explain why.
+
+
+
+53) In classification, a common choice for a loss function is the SVM loss, also known as the hinge loss. What is the loss function (give a formula or explain in detail). Why is it referred to as the "hinge" loss? Conceptually, how does it optimize your model?
+
+
+54) Before training a neural network, once the data has been obtained, it is common to pre-process the data. What are some common pre-processing techniques, and why are they used?
+
+
+
+55) Question about hierichal softmax
+
+
+
+
+56) At your machine learning startup, you are working with your coworker to develop a neural network to classify animals in an image. You show up a bit late to work one day, and your coworker has already started working on the neural network. You see that he added a few convolutional layers followed by a few dense layers before passing it through a softmax function. Before training, he initializes all weights to 0. Why is this a bad idea? Explain in detail and provide math equations to help illustrate your point.
+
+
+57) 
+
+
+31) In deep learning, models are often trained iteratively via gradient descent. One of the hyperparameters machine learning engineers often spend time tuning is the gradient descent batch size. How is this number chosen? What are the advantages of stochastic gradient descent over regular gradient descent?
+
+
+
+
+FACEBOOK:
+
+dot product of 2 sparse vectors
+dot product of 2 sparse matrices
+How would you build, train, and deploy a system to detect if multimedia and/or ads contents being posted violate terms or contains offensive materials?
+There is a building with 100 floors. You are given 2 identical eggs. How do you use 2 eggs to find the threshold floor, where the egg will definitely break from any floor above floor N, including floor N itself.
+You randomly draw a coin from 100 coins — 1 unfair coin (head-head), 99 fair coins (head-tail) and roll it 10 times. If the result is 10 heads, what is the probability that the coin is unfair?
+Facebook would like to develop a way to estimate the month and day of people’s birthdays, regardless of whether people give us that information directly. What methods would you propose, and data would you use, to help with that task?
+How would you compare the relative performance of two different back-end engines for automated generation of Facebook “Friend” suggestions?
+You’re about to get on a plane to Seattle. You want to know if you should bring an umbrella. You call 3 random friends of yours who live there and ask each independently if it’s raining. Each of your friends has a 2/3 chance of telling you the truth and a 1/3 chance of messing with you by lying. All 3 friends tell you that “Yes” it is raining. What is the probability that it’s actually raining in Seattle?
+Consider a game with 2 players, A and B. Player A has 8 stones, player B has 6. Game proceeds as follows. First, A rolls a fair 6-sided die, and the number on the die determines how many stones A takes over from B. Next, B rolls the same die, and the exact same thing happens in reverse. This concludes the round. Whoever has more stones at the end of the round wins and the game is over. If players end up with equal # of stones at the end of the round, it is a tie and another round ensues. What is the probability that B wins in 1, 2, …, n rounds?
+How do you prove that males are on average taller than females by knowing just gender or height? https://www.glassdoor.com.hk/Interview/san-francisco-data-scientist-interview-questions-SRCH_IL.0,13_IC1147401_KO14,28.htm)
+What is a monkey patch?
+You’re at a casino with two dice, if you roll a 5 you win, and get paid $10. What is your expected payout? If you play until you win (however long that takes) then stop, what is your expected payout?
+Likes/user and minutes spent on a platform are increasing but total number of users are decreasing. What could be the root cause of it?
+How would you build an ad click prediction system
+You have 52 playing cards (26 red, 26 black). You draw cards one by one. A red card pays you a dollar. A black one fines you a dollar. You can stop any time you want. Cards are not returned to the deck after being drawn. What is the expected payoff following this optimal rule?
+Tossing a coin ten times resulted in 8 heads and 2 tails. How would you analyze whether a coin is fair? What is the p-value?
+You have a google app and you make a change. How do you test if a metric has increased or not?
+Implement stratified k fold cross validation (Lyft)
+
+How to calculate radius for Uber Pool in a city?
+How to decide if a location should be included in Uber Pool?
+Faster RCNN, MaskRNN question
+How can outlier detection techniques be useful to Uber? How would you implement such a technique?
+How do you detect multicollinearity and why is it a problem? Why are you bothered if the predictive power of an algorithm is good?
+How do you design the Uber pool route
+
+
+MICROSOFT (https://towardsdatascience.com/microsoft-data-science-interview-questions-and-answers-69ccac16bd9b):
+
+You are developing a binary classifier to detect cancer in a CT scan. You train a superb model, and the local hospital wants to make use of it. Once you give it to them to use, they ask you what to set the threshold to. What are they referring to, and how do you respond?
+
+How do you detect if an observation is an outlier?
+
+What is the difference between a type I error and type II error?
+
+Write the logloss and regression formula.
+
+Explain what an SVM is.
+
+Generate 7 integers with equal probability from a function which returns 1/0 with probability p and (1-p). 
+
+How do you summarize a Twiter feed?
+
+
+
+
+
+
+
+
+Precision and Recall
+Sensitivity and specificity
+Accuracy
+
+svm
+random forests
+naive bayes
+k nearest neighbors (knn)
+clustering
+
+
+
+Why convolutional layers
+Why recurrent layers
+Gradients
+Different optimzers
+
+non-linearities
+
+

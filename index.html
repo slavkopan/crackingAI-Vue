@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Cracking the AI Interview</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Styles -->
+    <link href="/static/assets/css/page.min.css" rel="stylesheet">
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/static/assets/img/apple-touch-icon.png">
+    <link rel="icon" href="/static/assets/img/favicon.png">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="CrackingTheAiInterview">
+    <meta property="og:description" content="Where people seeking artificial intelligence and machine learning jobs can prepare for the AI interview.">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/student-garage.appspot.com/o/images%2Flanding%2FLogomark%20-%20Black.png?alt=media&token=683f5261-4d54-4cb3-8ad9-a06c16906e81">
+    <meta property="og:url" content="http://studentgarage.co">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+
+    <script  type="text/javascript">
+        function onLinkedinLoad() {
+            console.log("trying to login");
+            IN.Event.on(IN, "auth", getProfileData);
+
+        }
+        function getProfileData() {
+            IN.API.Profile("me").fields("id", "first-name", "last-name", "headline", "location", "picture-url","picture-urls::(original)", "public-profile-url", "email-address","positions").result(displayProfileData).error(onError);
+        }
+
+        // Handle the successful return from the API call
+        function displayProfileData(data){
+            window.linkedInAuth.linkedinInfo(data);
+            //console.log(data);
+        }
+        function onError () {
+
+        }
+
+    </script>
+
+    <style>
+        html {
+            position: relative;
+        }
+
+        html {
+            height: 100%;
+        }
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+            padding: 25px 25px 80px 25px;
+        }
+
+           /* footer {
+                position: absolute!important;
+                left: 0!important;
+                bottom: 0!important;
+                height: auto!important;
+                width: 100%!important;
+                overflow: hidden!important;
+            } */
+
+            @media screen and (max-width: 992px) {
+                /* footer
+                {
+                    position: initial!important;
+                } */
+
+                /* body
+                {
+                    margin: 0 0 0px!important;
+                    overflow-x: hidden;
+                } */
+           }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="app"></div>
+
+    <!-- Scripts -->
+    <script src="/static/assets/js/page.min.js"></script>
+    <script src="/static/assets/js/script.js"></script>
+
+  </body>
+</html>

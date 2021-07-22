@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Nokora&display=swap');
+
+.min-height {
+  /* min-height: calc(100vh - 70px); */
+}
+
+.background-theme {
+  background-color: #F8F8F8 !important;
+}
+
+/*.checkout-section {
+  min-height: calc(100vh - 70px);
+}*/
+
+.header-text {
+  margin-top: 35px !important;
+  margin-bottom: 80px !important;
+}
+
+.header-text p {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  color: #333333;
+
+}
+
+.footer-text {
+  margin-top: 57px;
+}
+
+.premium-access {
+  align-items: center;
+}
+
+.premium-access p {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 23px;
+  text-align: center;
+  color: #333333;
+  margin-left: 5px;
+  /* margin-bottom: 2px; */
+  /* margin-top: 50px !important; */
+}
+
+.premium-description p {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  padding: 10px;
+}
+
+.expires-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15.86px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.details {
+  display: grid;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.price {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 75px;
+  line-height: 99px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.duration {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.price-card .title {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+
+}
+
+.price-card small {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.price-card label {
+  cursor: pointer;
+}
+
+.custom-card {
+  background: #D2D2D2 !important;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 287px;
+  height: 336px;
+  margin: 0 auto;
+  position: relative !important;
+  cursor: pointer;
+}
+
+.current-plan {
+  position: absolute;
+  top: -44px;
+  right: -1px;
+  left: -1px;
+  background: #2ABE27;
+  border-radius: 5px 5px 0px 0px;
+  padding: 11px 0 11px 0;
+  color: #FFFFFF;
+  font-family: "Nokora", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  /* max-width: 287px;
+  width: auto; */
+}
+
+.select-btn {
+  background: #3C7299 !important;
+  border-radius: 10px !important;
+  min-width: 150px !important;
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px !important;
+  line-height: 26px !important;
+  text-align: center !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  opacity: 0.4;
+
+}
+
+.btn-disabled, .btn-disabled:hover {
+  background: #E5E5E5 !important;
+  border-radius: 10px !important;
+  min-width: 150px !important;
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px !important;
+  line-height: 26px !important;
+  text-align: center !important;
+  color: #FFFFFF !important;
+  border: none !important;
+
+}
+
+.select-btn:hover:enabled,
+.select-btn:active {
+  background: #3C7299 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  opacity: 1;
+
+}
+
+/* .card-body:hover .select-btn.disabled {
+  background: #7194AD !important;
+  color: #FFFFFF !important;
+  border: none;
+}
+
+.custom-card .card-body:hover .select-btn {
+  opacity: 1;
+} */
+
+/* .custom-card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+} */
+
+#subscription-form .hidden {
+  display: none;
+}
+
+#card-errors {
+  color: #e23f49;
+  margin-top: 10px;
+  min-height: 24px;
+}
+
+.subscribe-btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #3C7299 !important;
+  color: white;
+  border-width: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+  background-color: #3C7299 !important;
+  color: #FFFFFF !important;
+}
+
+.subscription-card {
+  min-width: 320px !important;
+}
+
+.subscription-card .card-title {
+  text-align: left;
+}
+
+.modal-header {
+  display: flex !important;
+}
+
+.modal-header .close:hover,
+.close:focus {
+  background: #FFFFFF !important;
+  outline: 0 !important;
+}
+
+.btn-currentplan,
+.btn-currentplan:hover {
+  background-color: transparent !important;
+  border: 2px solid #FFFFFF !important;
+  text-transform: capitalize;
+  display: block !important;
+  color: #FFFFFF !important;
+  margin: 0 auto;
+  position: absolute !important;
+  top: 55px;
+  left: 78px;
+}
+
+/* Payment Details */
+.vertical-divider {
+  border-right: 1px solid rgba(229, 229, 229, 0.75);
+}
+
+.card-number {
+  position: relative !important;
+}
+
+.card-icon {
+  position: absolute !important;
+  right: 10px;
+  top: 38px;
+}
+
+.btn-checkout,
+.btn-checkout:hover {
+  width: auto !important;
+  min-width: 136px;
+  height: 40px;
+  background: rgba(60, 114, 153, 0.75) !important;
+  border-radius: 4px !important;
+  font-family: 'Nokora', sans-serif;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+.same-label {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666666;
+}
+
+.payment-heading {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #333333;
+}
+
+legend {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #000000;
+}
+
+.custom-control-label {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.total-info {
+  margin-top: 61px;
+  /*padding-left: 0px !important;*/
+}
+
+.total {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.total-price {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.checkout-section input[type=text] {
+  height: 40px !important;
+  border: 0.5px solid #666666 !important;
+  box-sizing: border-box !important;
+  border-radius: 2px !important;
+}
+
+.fieldset {
+  position: relative;
+  color: #8898AA;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: row;
+  border: 0.5px solid #666666 !important;
+  box-sizing: border-box !important;
+  border-radius: 2px !important;
+}
+
+.fieldset>span {
+  width: 120px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.fieldset>span.brand {
+  width: 30px;
+  right: 0px;
+  margin-right: 10px;
+}
+
+.field {
+  background: transparent;
+  font-weight: 300;
+  border: 0;
+  color: #31325F;
+  outline: none;
+  flex: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: text;
+}
+
+.field::-webkit-input-placeholder {
+  color: #686868;
+}
+
+.field::-moz-placeholder {
+  color: #686868;
+}
+
+/* .exp-input {
+  border: 0.5px solid #666666;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 72px;
+  height: 40px;
+  align-self: center;
+}
+
+.name-input {
+  width: 268px;
+  height: 40px;
+  border: 0.5px solid #666666;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.card-input {
+  width: 375px;
+  height: 40px;
+  border: 0.5px solid #666666;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.cvc-input {
+  width: 69px;
+  height: 40px;
+  border: 0.5px solid #666666;
+  box-sizing: border-box;
+  border-radius: 2px;
+} */
+.custom-radio .custom-control-label::after {
+  top: 4px;
+  left: -20px;
+  border-radius: 50%;
+  width: 12px;
+  height: 13px;
+  background-color: #3C7299 !important;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label:after {
+  background-image: none !important;
+}
+
+.success-message {
+  text-align: center;
+}
+
+.success-message i {
+  font-size: 40px;
+  color: green;
+}
+
+.success-message p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.success-message button {
+  background: #3C7299 !important;
+  color: white !important;
+  border: none;
+  padding: 8px 10px 8px 10px;
+  border-radius: 2px;
+}
+
+.payment-history {
+  background-color: #3c7299;
+}
+
+.update-credit-card {
+  background-color: #3c7299;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom-card {
+    width: 350px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-card {
+    width: 345px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .custom-card {
+    width: 300px;
+    height: 380px;
+    margin-bottom: 10px;
+  }
+
+  .header-text {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .header-text p {
+    font-size: 24px;
+  }
+
+  .select-btn {
+    width: 179px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .footer-text p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+}

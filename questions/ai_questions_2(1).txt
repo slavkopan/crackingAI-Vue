@@ -1,0 +1,77 @@
+Questions
+
+1.
+Type: Probability/Statistics
+Difficulty: Medium
+
+Question:
+
+You have a fair coin which shows either heads (H) or tails (T). What is the expected number of tosses to observe the pattern HTH?
+
+Answer: 
+10
+Explanation
+
+2. 
+Type: Probability/Statistics
+Difficulty: Hard
+
+Question: 
+
+You have a fair coin which shows either heads (H) or tails (T). What is the expected number of tosses to observe the pattern HTHHTHHHTHH
+
+Answer:
+2064
+
+3.
+Type: Probability/Statistics
+Difficulty: Medium
+
+Question: 
+
+You are given X~Uniform(0,1). Explain you could simulate an Exponential random variable given just X. 
+
+Answer: 
+Inverse Transform Sampling
+
+4.
+Type: Probability/Statistics
+Difficulty: Easy
+
+Question:
+
+You are given access to a fair coin which you can flip as many times as you choose. Explain how you could use this fair coin to simulate trials from a Uniform(0,1) Random variable.
+
+Answer:
+Flip/Segment
+
+5.
+Type: General Machine Learning
+Difficulty: Medium
+
+Question: When building a Random Forrest model, explain why it is important that the individual trees in the ensemble are as decorrelated as possible.
+
+Answer: Variance of mean of random variables is 1/N^2 * (Sum of individual variances + 2*Pairwise covariances)
+
+6.
+Type: General Machine Learning
+Difficulty: Medium
+
+Question: In the SVM framework, explain the signficance of the so called "Support Vectors". Why does this make prediction easy?
+
+Answer: Support vectors are training points for which the dual variable is non zero. 
+In dual formulation, prediction then only relies on those points, so don't have to save all points or large weights
+
+
+7.
+Type: General Machine Learning
+Difficulty: Hard
+
+Question: Explain the similarities/differences between Principal Components Regression and Ridge Regression. 
+
+Answer: Differences, just explain what they are. 
+Similarities: PCR ignores directions with small EVs, Ridge shrinks, makes XTX less singular, reduces impact of multicollinearity
+
+
+8.
+

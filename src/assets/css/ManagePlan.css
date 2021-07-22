@@ -1,0 +1,37 @@
+.manage-plan-text {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.active-text {
+  font-family: 'Nokora', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.sub-type {
+  text-transform: capitalize;
+}
+
+.cancel-section {
+  margin-top: 20px;
+}
+
+.cancel-section button {
+  min-width: 221px;
+}
+
+.cancel-message {
+  color: #c39369;
+}
+
+.error-message {
+  color: red;
+}
